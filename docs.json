@@ -1,69 +1,173 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Absinthe Documentation",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
     "dark": "#15803D"
   },
   "favicon": "/favicon.svg",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "seo": {
+    "indexing": "navigable"
+  },
+  "search": {
+    "prompt": "Search Absinthe docs..."
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Contact Sales",
+        "href": "https://absinthe.network/pricing"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://absinthe.network"
+    }
+  },
+  "contextual": {
+    "options": ["copy", "view", "chatgpt", "claude", "perplexity", "mcp", "cursor", "vscode"]
+  },
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Docs",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Introduction",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "introduction/how-it-works-overview",
+              "introduction/key-concept-data-integrations",
+              "introduction/key-concept-campaigns",
+              "introduction/key-concept-point-sources",
+              "introduction/key-concept-tradable-points",
+              "introduction/terms-to-know"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Quick Start Guide",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              {
+                "group": "User Navigation Guides",
+                "pages": [
+                  "quickstart/personas/cmo",
+                  "quickstart/personas/designer",
+                  "quickstart/personas/developer",
+                  "quickstart/personas/community-manager",
+                  "quickstart/personas/founder"
+                ]
+              },
+              "quickstart/how-to-use-absinthe"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Administrative",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "administrative/logins",
+              "administrative/adding-users",
+              "administrative/billing"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Data Integrations",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "integrations/overview",
+              "integrations/galxe",
+              "integrations/zealy",
+              "integrations/x",
+              "integrations/token",
+              "integrations/liquidity-pools",
+              "integrations/discord-server"
+            ]
+          },
+          {
+            "group": "Workspace Analytics",
+            "pages": [
+              "workspace-analytics/pulse-analytics",
+              "workspace-analytics/competitor-tracking"
+            ]
+          },
+          {
+            "group": "Campaigns",
+            "pages": [
+              "campaigns/overview",
+              "campaigns/campaign-lifecycle",
+              {
+                "group": "Point Sources",
+                "pages": [
+                  "campaigns/point-sources/overview",
+                  "campaigns/point-sources/onchain-activity",
+                  "campaigns/point-sources/social-activity",
+                  "campaigns/point-sources/referrals",
+                  "campaigns/point-sources/daily-check-ins",
+                  "campaigns/point-sources/custom-events"
+                ]
+              },
+              {
+                "group": "Webpage Design Studio",
+                "pages": [
+                  "campaigns/design-studio/overview",
+                  "campaigns/design-studio/widgets/overview",
+                  "campaigns/design-studio/widgets/leaderboard",
+                  "campaigns/design-studio/widgets/quests",
+                  "campaigns/design-studio/widgets/profile",
+                  "campaigns/design-studio/widgets/rewards"
+                ]
+              },
+              {
+                "group": "Gamification Mechanisms",
+                "pages": [
+                  "campaigns/gamification/overview",
+                  "campaigns/gamification/streaks",
+                  "campaigns/gamification/badges",
+                  "campaigns/gamification/thresholds",
+                  "campaigns/gamification/multipliers"
+                ]
+              },
+              {
+                "group": "Liquid and Tradable Points",
+                "pages": [
+                  "campaigns/tradable-points/overview",
+                  "campaigns/tradable-points/configure",
+                  "campaigns/tradable-points/launch",
+                  "campaigns/tradable-points/trade",
+                  "campaigns/tradable-points/redeem",
+                  "campaigns/tradable-points/spin-down"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Ideas and Strategies",
+            "pages": [
+              "ideas-and-strategies/best-practices-campaign-design",
+              "ideas-and-strategies/things-to-watch-out-for",
+              "ideas-and-strategies/common-end-user-concerns",
+              "ideas-and-strategies/best-practices-partnerships"
+            ]
+          },
+          {
+            "group": "Privacy and Legal",
+            "pages": [
+              "privacy-and-legal/terms-and-conditions",
+              "privacy-and-legal/privacy-policy"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "API Reference",
         "groups": [
           {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
+            "group": "Overview",
+            "pages": ["api-reference/introduction"]
           }
         ]
       }
@@ -71,52 +175,14 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Changelog",
+          "href": "https://absinthe.network/changelog",
+          "icon": "clock"
         }
       ]
     }
   },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
-  },
   "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+    "socials": {}
   }
 }
