@@ -32,59 +32,61 @@
     }
   },
   "contextual": {
-    "options": ["copy", "view", "chatgpt", "claude", "perplexity", "mcp", "cursor", "vscode"]
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "navigation": {
     "tabs": [
       {
-        "tab": "Docs",
-        "groups": [
+        "tab": "User Guide",
+        "pages": [
+          "index",
           {
-            "group": "Introduction",
+            "group": "Get Started",
             "pages": [
-              "index",
-              "introduction/how-it-works-overview",
-              "introduction/key-concept-data-integrations",
-              "introduction/key-concept-campaigns",
-              "introduction/key-concept-point-sources",
-              "introduction/key-concept-tradable-points",
-              "introduction/terms-to-know"
+              "get-started/welcome-to-absinthe",
+              "get-started/quick-start-guide",
+              "get-started/workspace",
+              "get-started/data-integrations",
+              "get-started/campaigns",
+              "get-started/vouchers-tradable-points",
+              "get-started/retention-spend-rewards",
+              "get-started/terms-to-know"
             ]
           },
           {
-            "group": "Quick Start Guide",
+            "group": "User Guides",
             "pages": [
-              {
-                "group": "User Navigation Guides",
-                "pages": [
-                  "quickstart/personas/cmo",
-                  "quickstart/personas/designer",
-                  "quickstart/personas/developer",
-                  "quickstart/personas/community-manager",
-                  "quickstart/personas/founder"
-                ]
-              },
-              "quickstart/how-to-use-absinthe"
+              "user-guides/cmo-marketing-leads",
+              "user-guides/designers",
+              "user-guides/developers",
+              "user-guides/community-managers",
+              "user-guides/founders-leaders"
             ]
           },
           {
             "group": "Administrative",
             "pages": [
-              "administrative/logins",
+              "administrative/access-absinthe",
               "administrative/adding-users",
-              "administrative/billing"
+              "administrative/billing",
+              "administrative/tnc-privacy-policy"
             ]
           },
           {
-            "group": "Data Integrations",
+            "group": "Your Data Integrations",
             "pages": [
-              "integrations/overview",
-              "integrations/galxe",
-              "integrations/zealy",
-              "integrations/x",
-              "integrations/token",
-              "integrations/liquidity-pools",
-              "integrations/discord-server"
+              "data-integrations/token-health",
+              "data-integrations/community-health",
+              "data-integrations/product-health"
             ]
           },
           {
@@ -97,77 +99,96 @@
           {
             "group": "Campaigns",
             "pages": [
-              "campaigns/overview",
               "campaigns/campaign-lifecycle",
               {
                 "group": "Point Sources",
                 "pages": [
-                  "campaigns/point-sources/overview",
-                  "campaigns/point-sources/onchain-activity",
-                  "campaigns/point-sources/social-activity",
-                  "campaigns/point-sources/referrals",
-                  "campaigns/point-sources/daily-check-ins",
-                  "campaigns/point-sources/custom-events"
+                  "campaigns/point-sources/discord",
+                  "campaigns/point-sources/twitter-x",
+                  "campaigns/point-sources/questing-platforms",
+                  "campaigns/point-sources/user-generated-content",
+                  "campaigns/point-sources/token-nft-holding",
+                  "campaigns/point-sources/on-chain-activity",
+                  "campaigns/point-sources/api-based-activity"
                 ]
               },
+              {
+                "group": "Gamification Primitives",
+                "pages": [
+                  "campaigns/gamification/tradable-incentives",
+                  "campaigns/gamification/milestones",
+                  "campaigns/gamification/modules",
+                  "campaigns/gamification/badges",
+                  "campaigns/gamification/multipliers",
+                  "campaigns/gamification/bonuses",
+                  "campaigns/gamification/tiers",
+                  "campaigns/gamification/referral-program",
+                  "campaigns/gamification/daily-check-ins"
+                ]
+              },
+              "campaigns/vouchers-tradable-points",
               {
                 "group": "Webpage Design Studio",
                 "pages": [
-                  "campaigns/design-studio/overview",
-                  "campaigns/design-studio/widgets/overview",
-                  "campaigns/design-studio/widgets/leaderboard",
-                  "campaigns/design-studio/widgets/quests",
-                  "campaigns/design-studio/widgets/profile",
-                  "campaigns/design-studio/widgets/rewards"
+                  "campaigns/design-studio/brand-themes",
+                  {
+                    "group": "Basic Widgets",
+                    "pages": [
+                      "campaigns/design-studio/basic-widgets/placeholder"
+                    ]
+                  },
+                  {
+                    "group": "Advanced Widgets",
+                    "pages": [
+                      "campaigns/design-studio/advanced-widgets/placeholder"
+                    ]
+                  }
                 ]
               },
               {
-                "group": "Gamification Mechanisms",
+                "group": "Campaign Analytics",
                 "pages": [
-                  "campaigns/gamification/overview",
-                  "campaigns/gamification/streaks",
-                  "campaigns/gamification/badges",
-                  "campaigns/gamification/thresholds",
-                  "campaigns/gamification/multipliers"
+                  "campaigns/analytics/campaign-data-dashboard",
+                  "campaigns/analytics/points-adjustments",
+                  "campaigns/analytics/user-audit-dashboard"
                 ]
               },
               {
-                "group": "Liquid and Tradable Points",
+                "group": "Campaign Settings",
                 "pages": [
-                  "campaigns/tradable-points/overview",
-                  "campaigns/tradable-points/configure",
-                  "campaigns/tradable-points/launch",
-                  "campaigns/tradable-points/trade",
-                  "campaigns/tradable-points/redeem",
-                  "campaigns/tradable-points/spin-down"
+                  "campaigns/settings/connections",
+                  "campaigns/settings/primary-identity",
+                  "campaigns/settings/profile-tab",
+                  "campaigns/settings/multi-currency"
+                ]
+              },
+              {
+                "group": "Webpage Settings",
+                "pages": [
+                  "campaigns/webpage-settings/seo",
+                  "campaigns/webpage-settings/google-analytics",
+                  "campaigns/webpage-settings/custom-domain",
+                  "campaigns/webpage-settings/geoblocking"
                 ]
               }
-            ]
-          },
-          {
-            "group": "Ideas and Strategies",
-            "pages": [
-              "ideas-and-strategies/best-practices-campaign-design",
-              "ideas-and-strategies/things-to-watch-out-for",
-              "ideas-and-strategies/common-end-user-concerns",
-              "ideas-and-strategies/best-practices-partnerships"
-            ]
-          },
-          {
-            "group": "Privacy and Legal",
-            "pages": [
-              "privacy-and-legal/terms-and-conditions",
-              "privacy-and-legal/privacy-policy"
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
+        "tab": "Developer Guide",
         "groups": [
           {
-            "group": "Overview",
-            "pages": ["api-reference/introduction"]
+            "group": "Absinthe Adapters",
+            "pages": ["developer-guide/adapters/placeholder"]
+          },
+          {
+            "group": "Server-to-Server Data API",
+            "pages": ["developer-guide/server-to-server-api/placeholder"]
+          },
+          {
+            "group": "Campaign Stats API",
+            "pages": ["developer-guide/campaign-stats-api/placeholder"]
           }
         ]
       }
